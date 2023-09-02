@@ -1,0 +1,12 @@
+//
+//  Development.xcconfig
+//  ShotDeck
+//
+//  Created by shotDeck_developer  on 27/12/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+APPLICATION_ENVIRONMENT = developement
+EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64
+
