@@ -10,6 +10,8 @@ target 'Ecommerce' do
   pod 'SDWebImage'
   pod 'SkeletonView'
   pod 'SVProgressHUD'
+  pod 'DGCharts'
+
   target 'EcommerceTests' do
     inherit! :search_paths
     # Pods for testing
