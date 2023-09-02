@@ -2,7 +2,7 @@
 //  NetworkAvability.swift
 //  NetworkCheck
 //
-//  Created by shotDeck_developer  on 11/02/22.
+//  Created by HEMANG SOLANKI  on 11/02/22.
 //
 
 import Foundation

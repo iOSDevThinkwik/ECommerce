@@ -14,12 +14,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var btnSubmit: UIButton!
+    var viewModel: LoginViewModel = .init()
     
     //    MARK: - View Life Cycle -
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupUI()
+        if UserDefaults.standard.isUserLoggedIn() == true {
+            self.navigateToTabbar()
+        }else {
+            self.setupUI()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -77,11 +82,13 @@ class ViewController: UIViewController {
 
     @IBAction func btnSubmitTapped(_ sender: Any) {
         if isVaildData() {
-//            self.PostLoginAPI()
+            self.PostLoginAPI()
         }
     }
     
     //    MARK: - Validation -
+    
+    
     func isVaildData() -> Bool {
         if self.txtEmail.text?.trim().isEmpty == true {
             self.showToast(message: "Email cannot be blank.")
@@ -98,6 +105,41 @@ class ViewController: UIViewController {
             return false
         }
         return true
+    }
+    
+    func navigateToTabbar() {
+        DispatchQueue.main.async {
+            Common.shared.APPDELEGATE.isLoggedin = true
+            let vc: DashBoardVC = StoryBoardConstants.MAIN.instantiateViewController(aClass: DashBoardVC.self)
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
+    //MARK: -
+    //MARK: - Login API
+    
+    func PostLoginAPI() {
+        self.txtEmail.resignFirstResponder()
+        self.txtPassword.resignFirstResponder()
+        self.viewModel.login(email: self.txtEmail.text!.trim(),password: self.txtPassword.text!.trim()) { [self]
+            loginResponse in
+            UserDefaults.standard.removeObject(forKey: UserDefaults.standard.accessToken)
+            UserDefaults.standard.accessToken = (loginResponse.data?.token!)!
+            print("login Token....\((loginResponse.data?.token!)!)")
+            UserDefaults.standard.synchronize()
+            self.navigateToTabbar()
+        } failure: {
+            loginResponse, responseStatus in
+            if loginResponse != nil {
+                self.showToast(message: (loginResponse?.message)!,isMenu: true)
+            } else {
+                if responseStatus.statusCode == 500 {
+                    self.showToast(message: "We're experiencing a temporary issue with our servers. Please try again soon.", isMenu: true)
+                }else {
+                    self.showToast(message: responseStatus.errorMessage,isMenu: true)
+                }
+            }
+        }
     }
     
 }

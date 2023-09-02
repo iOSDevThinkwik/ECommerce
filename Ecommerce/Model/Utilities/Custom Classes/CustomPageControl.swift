@@ -2,7 +2,7 @@
 //  CustomPageControl.swift
 //  SHOTDECK
 //
-//  Created by Shotdeck_developer on 23/05/23.
+//  Created by HEMANG SOLANKI on 23/05/23.
 //
 
 import Foundation

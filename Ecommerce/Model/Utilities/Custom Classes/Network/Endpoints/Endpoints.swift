@@ -2,7 +2,7 @@
 //  Endpoints.swift
 //  NSUrlSession+RequestBuilder
 //
-//  Created by shotDeck_developer  on 16/12/21.
+//  Created by HEMANG SOLANKI  on 16/12/21.
 //
 
 import Foundation
@@ -46,13 +46,13 @@ class Endpoints {
     {
         switch ApplicationEnvironment.current {
         case .developement:
-            return "https://api.shotdeck.com/api/" //"https://api.shotdeck.com/api/"
+            return "http://192.168.1.190:3001/" //"https://api.shotdeck.com/api/"
         case .staging:
-            return "https://api.shotdeck.com/api/" //"https://api.shotdeck.com/api/"
+            return "http://192.168.1.190:3001/" //"https://api.shotdeck.com/api/"
         case .debug:
-            return "https://api.shotdeck.com/api/" //
+            return "http://192.168.1.190:3001/" //
         case .production:
-            return  "https://shotdeck.com/api/" //"https://api.shotdeck.com/api/"  //"https://shotdeck.com/api/"
+            return  "http://192.168.1.190:3001/" //"https://api.shotdeck.com/api/"  //"https://shotdeck.com/api/"
         }
     }
     

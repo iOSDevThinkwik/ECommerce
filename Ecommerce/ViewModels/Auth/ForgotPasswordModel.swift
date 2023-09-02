@@ -2,7 +2,7 @@
 //  ForgotPasswordModel.swift
 //  SHOTDECK
 //
-//  Created by Shotdeck_developer on 30/12/22.
+//  Created by HEMANG SOLANKI on 30/12/22.
 //
 
 import Foundation

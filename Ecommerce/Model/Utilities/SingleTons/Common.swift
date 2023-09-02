@@ -2,7 +2,7 @@
 //  Common.swift
 //  Shotdeck
 //
-//  Created by shotDeck_developer  on 28/12/21.
+//  Created by HEMANG SOLANKI  on 28/12/21.
 //
 
 import Foundation
@@ -109,10 +109,10 @@ class Common: NSObject, URLSessionDelegate, URLSessionDataDelegate {
         UserDefaults.standard.removeAll()
         self.delay(0.3) {
             DispatchQueue.main.async { [self] in
-//                let vc: FreeTrialVC = StoryBoardConstants.TABBAR.instantiateViewController(aClass: FreeTrialVC.self)
-//                let navVC = UINavigationController.init(rootViewController: vc)
-//                APPDELEGATE.window?.rootViewController = navVC
-//                APPDELEGATE.window?.makeKeyAndVisible()
+                let vc: ViewController = StoryBoardConstants.MAIN.instantiateViewController(aClass: ViewController.self)
+                let navVC = UINavigationController.init(rootViewController: vc)
+                APPDELEGATE.window?.rootViewController = navVC
+                APPDELEGATE.window?.makeKeyAndVisible()
             }
         }
     }

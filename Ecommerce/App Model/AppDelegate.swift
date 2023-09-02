@@ -49,14 +49,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
             self.requestPermission()
         }
-        if UserDefaults.standard.isUserLoggedIn() == true {
-            //            DispatchQueue.main.async {
-            //                let vc: TabbarVC = StoryBoardConstants.HOME.instantiateViewController(aClass: TabbarVC.self)
-            //                let navVC = UINavigationController.init(rootViewController: vc)
-            //                self.window?.rootViewController = navVC
-            //                self.window?.makeKeyAndVisible()
-            //            }
-        }
+//        if UserDefaults.standard.isUserLoggedIn() == true {
+//            let vc: DashBoardVC = StoryBoardConstants.MAIN.instantiateViewController(aClass: DashBoardVC.self)
+//            let navVC = UINavigationController.init(rootViewController: vc)
+//            Common.shared.APPDELEGATE.window?.rootViewController = navVC
+//            Common.shared.APPDELEGATE.window?.rootViewController.pus
+//        }
     }
     
     //MARK: *** App Tracking ***

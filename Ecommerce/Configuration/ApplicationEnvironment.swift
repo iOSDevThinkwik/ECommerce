@@ -1,6 +1,6 @@
 //  ApplicationEnvironment.swift
 //  ShotDeck
-//  Created by shotDeck_developer  on 27/12/21.
+//  Created by HEMANG SOLANKI  on 27/12/21.
 
 import Foundation
 
@@ -13,8 +13,8 @@ enum ApplicationEnvironment: String{
         if let path = Bundle.main.path(forResource: "Info", ofType: "plist") {
            nsDictionary = NSDictionary(contentsOfFile: path)
             guard let environmentName = nsDictionary?.object(forKey: "ApplicationEnvironment") as? String else {fatalError("Unknown AppEnvironment")}
-//            let environment = ApplicationEnvironment(rawValue: "staging")
-            let environment = ApplicationEnvironment(rawValue: environmentName)
+            let environment = ApplicationEnvironment(rawValue: "staging")
+//            let environment = ApplicationEnvironment(rawValue: environmentName)
             print("--------Current Environment--------\n", environment!)
             return environment!
         }

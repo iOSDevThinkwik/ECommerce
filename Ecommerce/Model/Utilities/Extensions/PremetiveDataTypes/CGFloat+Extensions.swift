@@ -2,7 +2,7 @@
 //  CGFloat+Extensions.swift
 //  Shotdeck
 //
-//  Created by shotDeck_developer  on 20/05/22.
+//  Created by HEMANG SOLANKI  on 20/05/22.
 //
 
 import Foundation

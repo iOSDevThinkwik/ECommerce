@@ -25,7 +25,8 @@ class LoginNC: BaseNetworkController {
                 if let data = data
                 {
                     loginInformation = BaseNetworkController.decodeData(data: data)
-                    if loginInformation?.success  == false {
+                    
+                    if loginInformation?.statusCode != 200 {
                         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
                             completion?(loginInformation, status)
                         }
@@ -45,6 +46,8 @@ class LoginNC: BaseNetworkController {
             return nil
         }
     }
+    
+    
     
     
 }

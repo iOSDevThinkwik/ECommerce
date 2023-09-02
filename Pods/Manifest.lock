@@ -1,4 +1,7 @@
 PODS:
+  - DGCharts (5.0.0):
+    - DGCharts/Core (= 5.0.0)
+  - DGCharts/Core (5.0.0)
   - IQKeyboardManagerSwift (6.5.11)
   - SDWebImage (5.16.0):
     - SDWebImage/Core (= 5.16.0)
@@ -7,6 +10,7 @@ PODS:
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
+  - DGCharts
   - IQKeyboardManagerSwift
   - SDWebImage
   - SkeletonView
@@ -14,17 +18,19 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - DGCharts
     - IQKeyboardManagerSwift
     - SDWebImage
     - SkeletonView
     - SVProgressHUD
 
 SPEC CHECKSUMS:
+  DGCharts: 6e0cf2644e8f81ad13f04caa8bc18502870a1c54
   IQKeyboardManagerSwift: c7955c0bdbf7b2eb29bb7daaa44e3d90f55a9a85
   SDWebImage: 2aea163b50bfcb569a2726b6a754c54a4506fcf6
   SkeletonView: 5a050f6411e697abd4cda0a8d767013399dccd69
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: a721a8ef181f897c98eaadc78257427418967861
+PODFILE CHECKSUM: ad2b804fde6ac549a5a38b0af7074c8dc4c5dbe9
 
 COCOAPODS: 1.12.1

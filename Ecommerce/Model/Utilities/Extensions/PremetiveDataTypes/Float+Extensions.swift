@@ -2,7 +2,7 @@
 //  Float+Extensions.swift
 //  Shotdeck
 //
-//  Created by shotDeck_developer  on 25/01/22.
+//  Created by HEMANG SOLANKI  on 25/01/22.
 //
 
 import Foundation

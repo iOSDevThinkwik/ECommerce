@@ -2,7 +2,7 @@
 //  Color+Extension.swift
 //  SHOTDECK
 //
-//  Created by Shotdeck_developer on 17/10/22.
+//  Created by HEMANG SOLANKI on 17/10/22.
 //
 
 import Foundation
