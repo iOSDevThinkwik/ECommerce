@@ -28,7 +28,7 @@ To create build, first steps is to install certificate and provisining profile w
 - Select Provising profile from Signing & Capabilities
 - Select Fenix Target -> All iOS Devices (arm64)
 - Select Build from Product menu and wait to complete the build
-- Find Product folder from Project Navigator, open build with name "Fenix" in Finder
+- Find Product folder from Project Navigator, open build with name "Ecommerce" in Finder
 - Archive the Ecommerce.app
 - Upload arhive to https://www.diawi.com/ and wait to complete the upload process. 
 - Now copy the link from Diawi and share it. 
