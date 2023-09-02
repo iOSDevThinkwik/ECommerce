@@ -75,24 +75,9 @@
 		254E4EC42AA305A500CF0DDE /* NetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254E4E2B2AA305A500CF0DDE /* NetworkOperation.swift */; };
 		254E4EC52AA305A500CF0DDE /* BaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254E4E2C2AA305A500CF0DDE /* BaseOperation.swift */; };
 		254E4EC62AA305A500CF0DDE /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254E4E2D2AA305A500CF0DDE /* Reachability.swift */; };
-		254E4EC72AA305A500CF0DDE /* TitleBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254E4E302AA305A500CF0DDE /* TitleBean.swift */; };
 		254E4EC82AA305A500CF0DDE /* AuthBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254E4E322AA305A500CF0DDE /* AuthBean.swift */; };
-		254E4EC92AA305A500CF0DDE /* DecksBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254E4E342AA305A500CF0DDE /* DecksBean.swift */; };
-		254E4ECA2AA305A500CF0DDE /* ProfileBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254E4E362AA305A500CF0DDE /* ProfileBean.swift */; };
-		254E4ECB2AA305A500CF0DDE /* BrowseBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254E4E382AA305A500CF0DDE /* BrowseBean.swift */; };
-		254E4ECC2AA305A500CF0DDE /* FileUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254E4E3B2AA305A500CF0DDE /* FileUploader.swift */; };
-		254E4ECD2AA305A500CF0DDE /* SearchSuggestionNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254E4E3D2AA305A500CF0DDE /* SearchSuggestionNC.swift */; };
-		254E4ECE2AA305A500CF0DDE /* DiscoverNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254E4E3F2AA305A500CF0DDE /* DiscoverNC.swift */; };
-		254E4ECF2AA305A500CF0DDE /* TitleFiltersNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254E4E412AA305A500CF0DDE /* TitleFiltersNC.swift */; };
-		254E4ED02AA305A500CF0DDE /* TitleNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254E4E422AA305A500CF0DDE /* TitleNC.swift */; };
 		254E4ED12AA305A500CF0DDE /* LoginNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254E4E442AA305A500CF0DDE /* LoginNC.swift */; };
-		254E4ED22AA305A500CF0DDE /* RegisterNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254E4E452AA305A500CF0DDE /* RegisterNC.swift */; };
-		254E4ED32AA305A500CF0DDE /* ForgotPasswordNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254E4E462AA305A500CF0DDE /* ForgotPasswordNC.swift */; };
 		254E4ED42AA305A500CF0DDE /* BaseNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254E4E472AA305A500CF0DDE /* BaseNetworkController.swift */; };
-		254E4ED52AA305A500CF0DDE /* FiltersNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254E4E492AA305A500CF0DDE /* FiltersNC.swift */; };
-		254E4ED62AA305A500CF0DDE /* DecksNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254E4E4B2AA305A500CF0DDE /* DecksNC.swift */; };
-		254E4ED72AA305A500CF0DDE /* ProfileNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254E4E4D2AA305A500CF0DDE /* ProfileNC.swift */; };
-		254E4ED82AA305A500CF0DDE /* BrowseNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254E4E4F2AA305A500CF0DDE /* BrowseNC.swift */; };
 		254E4ED92AA305A500CF0DDE /* RequestBuilder+BrowseShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254E4E512AA305A500CF0DDE /* RequestBuilder+BrowseShot.swift */; };
 		254E4EDA2AA305A500CF0DDE /* RequestBuilder+ReorderDecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254E4E522AA305A500CF0DDE /* RequestBuilder+ReorderDecks.swift */; };
 		254E4EDB2AA305A500CF0DDE /* RequestBuilder+TitleSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254E4E532AA305A500CF0DDE /* RequestBuilder+TitleSearch.swift */; };
@@ -129,6 +114,15 @@
 		254E4EFF2AA305E200CF0DDE /* development.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 254E4EFB2AA305E200CF0DDE /* development.xcconfig */; };
 		254E4F002AA305E200CF0DDE /* staging.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 254E4EFC2AA305E200CF0DDE /* staging.xcconfig */; };
 		254E4F012AA305E200CF0DDE /* ApplicationEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254E4EFD2AA305E200CF0DDE /* ApplicationEnvironment.swift */; };
+		254E4F142AA3235D00CF0DDE /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 254E4F0B2AA3235D00CF0DDE /* Inter-Medium.ttf */; };
+		254E4F152AA3235D00CF0DDE /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 254E4F0C2AA3235D00CF0DDE /* Inter-Light.ttf */; };
+		254E4F162AA3235D00CF0DDE /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 254E4F0D2AA3235D00CF0DDE /* Inter-Thin.ttf */; };
+		254E4F172AA3235D00CF0DDE /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 254E4F0E2AA3235D00CF0DDE /* Inter-Bold.ttf */; };
+		254E4F182AA3235D00CF0DDE /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 254E4F0F2AA3235D00CF0DDE /* Inter-Regular.ttf */; };
+		254E4F192AA3235D00CF0DDE /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 254E4F102AA3235D00CF0DDE /* Inter-ExtraBold.ttf */; };
+		254E4F1A2AA3235D00CF0DDE /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 254E4F112AA3235D00CF0DDE /* Inter-ExtraLight.ttf */; };
+		254E4F1B2AA3235D00CF0DDE /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 254E4F122AA3235D00CF0DDE /* Inter-Black.ttf */; };
+		254E4F1C2AA3235D00CF0DDE /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 254E4F132AA3235D00CF0DDE /* Inter-SemiBold.ttf */; };
 		2BD5C611037F65A5C9EB0E43 /* Pods_EcommerceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3874E29552A03531F1C57F31 /* Pods_EcommerceTests.framework */; };
 		60FEBD1F81AA62AA7771B062 /* Pods_Ecommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E0FC1655C8BF5E8295EA51 /* Pods_Ecommerce.framework */; };
 		6728EC092AA2FD3B0094697B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6728EC082AA2FD3B0094697B /* AppDelegate.swift */; };
@@ -229,24 +223,9 @@
 		254E4E2B2AA305A500CF0DDE /* NetworkOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkOperation.swift; sourceTree = "<group>"; };
 		254E4E2C2AA305A500CF0DDE /* BaseOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseOperation.swift; sourceTree = "<group>"; };
 		254E4E2D2AA305A500CF0DDE /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
-		254E4E302AA305A500CF0DDE /* TitleBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleBean.swift; sourceTree = "<group>"; };
 		254E4E322AA305A500CF0DDE /* AuthBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthBean.swift; sourceTree = "<group>"; };
-		254E4E342AA305A500CF0DDE /* DecksBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecksBean.swift; sourceTree = "<group>"; };
-		254E4E362AA305A500CF0DDE /* ProfileBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileBean.swift; sourceTree = "<group>"; };
-		254E4E382AA305A500CF0DDE /* BrowseBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseBean.swift; sourceTree = "<group>"; };
-		254E4E3B2AA305A500CF0DDE /* FileUploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUploader.swift; sourceTree = "<group>"; };
-		254E4E3D2AA305A500CF0DDE /* SearchSuggestionNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchSuggestionNC.swift; sourceTree = "<group>"; };
-		254E4E3F2AA305A500CF0DDE /* DiscoverNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverNC.swift; sourceTree = "<group>"; };
-		254E4E412AA305A500CF0DDE /* TitleFiltersNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleFiltersNC.swift; sourceTree = "<group>"; };
-		254E4E422AA305A500CF0DDE /* TitleNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleNC.swift; sourceTree = "<group>"; };
 		254E4E442AA305A500CF0DDE /* LoginNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNC.swift; sourceTree = "<group>"; };
-		254E4E452AA305A500CF0DDE /* RegisterNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterNC.swift; sourceTree = "<group>"; };
-		254E4E462AA305A500CF0DDE /* ForgotPasswordNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordNC.swift; sourceTree = "<group>"; };
 		254E4E472AA305A500CF0DDE /* BaseNetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNetworkController.swift; sourceTree = "<group>"; };
-		254E4E492AA305A500CF0DDE /* FiltersNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersNC.swift; sourceTree = "<group>"; };
-		254E4E4B2AA305A500CF0DDE /* DecksNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecksNC.swift; sourceTree = "<group>"; };
-		254E4E4D2AA305A500CF0DDE /* ProfileNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileNC.swift; sourceTree = "<group>"; };
-		254E4E4F2AA305A500CF0DDE /* BrowseNC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseNC.swift; sourceTree = "<group>"; };
 		254E4E512AA305A500CF0DDE /* RequestBuilder+BrowseShot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RequestBuilder+BrowseShot.swift"; sourceTree = "<group>"; };
 		254E4E522AA305A500CF0DDE /* RequestBuilder+ReorderDecks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RequestBuilder+ReorderDecks.swift"; sourceTree = "<group>"; };
 		254E4E532AA305A500CF0DDE /* RequestBuilder+TitleSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RequestBuilder+TitleSearch.swift"; sourceTree = "<group>"; };
@@ -283,6 +262,15 @@
 		254E4EFB2AA305E200CF0DDE /* development.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = development.xcconfig; sourceTree = "<group>"; };
 		254E4EFC2AA305E200CF0DDE /* staging.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = staging.xcconfig; sourceTree = "<group>"; };
 		254E4EFD2AA305E200CF0DDE /* ApplicationEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationEnvironment.swift; sourceTree = "<group>"; };
+		254E4F0B2AA3235D00CF0DDE /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		254E4F0C2AA3235D00CF0DDE /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		254E4F0D2AA3235D00CF0DDE /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		254E4F0E2AA3235D00CF0DDE /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		254E4F0F2AA3235D00CF0DDE /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		254E4F102AA3235D00CF0DDE /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		254E4F112AA3235D00CF0DDE /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		254E4F122AA3235D00CF0DDE /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		254E4F132AA3235D00CF0DDE /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		3874E29552A03531F1C57F31 /* Pods_EcommerceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EcommerceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6728EC052AA2FD3B0094697B /* Ecommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ecommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6728EC082AA2FD3B0094697B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -570,21 +558,9 @@
 		254E4E2E2AA305A500CF0DDE /* RequestBean */ = {
 			isa = PBXGroup;
 			children = (
-				254E4E2F2AA305A500CF0DDE /* Title */,
 				254E4E312AA305A500CF0DDE /* Auth */,
-				254E4E332AA305A500CF0DDE /* Decks */,
-				254E4E352AA305A500CF0DDE /* Profile */,
-				254E4E372AA305A500CF0DDE /* Browse */,
 			);
 			path = RequestBean;
-			sourceTree = "<group>";
-		};
-		254E4E2F2AA305A500CF0DDE /* Title */ = {
-			isa = PBXGroup;
-			children = (
-				254E4E302AA305A500CF0DDE /* TitleBean.swift */,
-			);
-			path = Title;
 			sourceTree = "<group>";
 		};
 		254E4E312AA305A500CF0DDE /* Auth */ = {
@@ -595,120 +571,21 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
-		254E4E332AA305A500CF0DDE /* Decks */ = {
-			isa = PBXGroup;
-			children = (
-				254E4E342AA305A500CF0DDE /* DecksBean.swift */,
-			);
-			path = Decks;
-			sourceTree = "<group>";
-		};
-		254E4E352AA305A500CF0DDE /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				254E4E362AA305A500CF0DDE /* ProfileBean.swift */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		254E4E372AA305A500CF0DDE /* Browse */ = {
-			isa = PBXGroup;
-			children = (
-				254E4E382AA305A500CF0DDE /* BrowseBean.swift */,
-			);
-			path = Browse;
-			sourceTree = "<group>";
-		};
 		254E4E392AA305A500CF0DDE /* NetworkController */ = {
 			isa = PBXGroup;
 			children = (
-				254E4E3A2AA305A500CF0DDE /* File Upload */,
-				254E4E3C2AA305A500CF0DDE /* Search  */,
-				254E4E3E2AA305A500CF0DDE /* Discover */,
-				254E4E402AA305A500CF0DDE /* Title */,
 				254E4E432AA305A500CF0DDE /* Auth */,
 				254E4E472AA305A500CF0DDE /* BaseNetworkController.swift */,
-				254E4E482AA305A500CF0DDE /* Get Filters */,
-				254E4E4A2AA305A500CF0DDE /* Decks */,
-				254E4E4C2AA305A500CF0DDE /* Profile */,
-				254E4E4E2AA305A500CF0DDE /* Browse */,
 			);
 			path = NetworkController;
-			sourceTree = "<group>";
-		};
-		254E4E3A2AA305A500CF0DDE /* File Upload */ = {
-			isa = PBXGroup;
-			children = (
-				254E4E3B2AA305A500CF0DDE /* FileUploader.swift */,
-			);
-			path = "File Upload";
-			sourceTree = "<group>";
-		};
-		254E4E3C2AA305A500CF0DDE /* Search  */ = {
-			isa = PBXGroup;
-			children = (
-				254E4E3D2AA305A500CF0DDE /* SearchSuggestionNC.swift */,
-			);
-			path = "Search ";
-			sourceTree = "<group>";
-		};
-		254E4E3E2AA305A500CF0DDE /* Discover */ = {
-			isa = PBXGroup;
-			children = (
-				254E4E3F2AA305A500CF0DDE /* DiscoverNC.swift */,
-			);
-			path = Discover;
-			sourceTree = "<group>";
-		};
-		254E4E402AA305A500CF0DDE /* Title */ = {
-			isa = PBXGroup;
-			children = (
-				254E4E412AA305A500CF0DDE /* TitleFiltersNC.swift */,
-				254E4E422AA305A500CF0DDE /* TitleNC.swift */,
-			);
-			path = Title;
 			sourceTree = "<group>";
 		};
 		254E4E432AA305A500CF0DDE /* Auth */ = {
 			isa = PBXGroup;
 			children = (
 				254E4E442AA305A500CF0DDE /* LoginNC.swift */,
-				254E4E452AA305A500CF0DDE /* RegisterNC.swift */,
-				254E4E462AA305A500CF0DDE /* ForgotPasswordNC.swift */,
 			);
 			path = Auth;
-			sourceTree = "<group>";
-		};
-		254E4E482AA305A500CF0DDE /* Get Filters */ = {
-			isa = PBXGroup;
-			children = (
-				254E4E492AA305A500CF0DDE /* FiltersNC.swift */,
-			);
-			path = "Get Filters";
-			sourceTree = "<group>";
-		};
-		254E4E4A2AA305A500CF0DDE /* Decks */ = {
-			isa = PBXGroup;
-			children = (
-				254E4E4B2AA305A500CF0DDE /* DecksNC.swift */,
-			);
-			path = Decks;
-			sourceTree = "<group>";
-		};
-		254E4E4C2AA305A500CF0DDE /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				254E4E4D2AA305A500CF0DDE /* ProfileNC.swift */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		254E4E4E2AA305A500CF0DDE /* Browse */ = {
-			isa = PBXGroup;
-			children = (
-				254E4E4F2AA305A500CF0DDE /* BrowseNC.swift */,
-			);
-			path = Browse;
 			sourceTree = "<group>";
 		};
 		254E4E502AA305A500CF0DDE /* RequestBuilder */ = {
@@ -769,6 +646,7 @@
 		254E4F032AA3064D00CF0DDE /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				254E4F092AA3235D00CF0DDE /* Fonts */,
 				6728EC112AA2FD3D0094697B /* Assets.xcassets */,
 				6728EC132AA2FD3D0094697B /* LaunchScreen.storyboard */,
 			);
@@ -794,7 +672,6 @@
 		254E4F062AA3076E00CF0DDE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				254E4F082AA3077E00CF0DDE /* Custom Cells */,
 				254E4F072AA3077600CF0DDE /* Controllers */,
 			);
 			path = ViewControllers;
@@ -808,11 +685,28 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		254E4F082AA3077E00CF0DDE /* Custom Cells */ = {
+		254E4F092AA3235D00CF0DDE /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				254E4F0A2AA3235D00CF0DDE /* Inter */,
 			);
-			path = "Custom Cells";
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		254E4F0A2AA3235D00CF0DDE /* Inter */ = {
+			isa = PBXGroup;
+			children = (
+				254E4F0B2AA3235D00CF0DDE /* Inter-Medium.ttf */,
+				254E4F0C2AA3235D00CF0DDE /* Inter-Light.ttf */,
+				254E4F0D2AA3235D00CF0DDE /* Inter-Thin.ttf */,
+				254E4F0E2AA3235D00CF0DDE /* Inter-Bold.ttf */,
+				254E4F0F2AA3235D00CF0DDE /* Inter-Regular.ttf */,
+				254E4F102AA3235D00CF0DDE /* Inter-ExtraBold.ttf */,
+				254E4F112AA3235D00CF0DDE /* Inter-ExtraLight.ttf */,
+				254E4F122AA3235D00CF0DDE /* Inter-Black.ttf */,
+				254E4F132AA3235D00CF0DDE /* Inter-SemiBold.ttf */,
+			);
+			path = Inter;
 			sourceTree = "<group>";
 		};
 		6728EBFC2AA2FD3B0094697B = {
@@ -1003,11 +897,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				254E4EFF2AA305E200CF0DDE /* development.xcconfig in Resources */,
+				254E4F192AA3235D00CF0DDE /* Inter-ExtraBold.ttf in Resources */,
+				254E4F152AA3235D00CF0DDE /* Inter-Light.ttf in Resources */,
+				254E4F1A2AA3235D00CF0DDE /* Inter-ExtraLight.ttf in Resources */,
+				254E4F172AA3235D00CF0DDE /* Inter-Bold.ttf in Resources */,
 				254E4EA32AA305A500CF0DDE /* CustomNavigationClass.swift.zip in Resources */,
 				6728EC152AA2FD3D0094697B /* LaunchScreen.storyboard in Resources */,
+				254E4F1B2AA3235D00CF0DDE /* Inter-Black.ttf in Resources */,
 				254E4F002AA305E200CF0DDE /* staging.xcconfig in Resources */,
+				254E4F142AA3235D00CF0DDE /* Inter-Medium.ttf in Resources */,
 				6728EC122AA2FD3D0094697B /* Assets.xcassets in Resources */,
 				254E4EFE2AA305E200CF0DDE /* productions.xcconfig in Resources */,
+				254E4F1C2AA3235D00CF0DDE /* Inter-SemiBold.ttf in Resources */,
+				254E4F162AA3235D00CF0DDE /* Inter-Thin.ttf in Resources */,
+				254E4F182AA3235D00CF0DDE /* Inter-Regular.ttf in Resources */,
 				6728EC102AA2FD3B0094697B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1143,7 +1046,6 @@
 				254E4EA12AA305A500CF0DDE /* UserDefaults+Extensions.swift in Sources */,
 				254E4E942AA305A500CF0DDE /* UICollectionView+Extensions.swift in Sources */,
 				254E4EC12AA305A500CF0DDE /* ResponseStatus.swift in Sources */,
-				254E4ED02AA305A500CF0DDE /* TitleNC.swift in Sources */,
 				254E4EBC2AA305A500CF0DDE /* Endpoints+addCaptionForImage.swift in Sources */,
 				254E4EE52AA305A500CF0DDE /* RequestBuilder+Filters.swift in Sources */,
 				254E4EE12AA305A500CF0DDE /* RequestBuilder+UpdataAccountInfor.swift in Sources */,
@@ -1151,35 +1053,28 @@
 				254E4E932AA305A500CF0DDE /* viewController+Extensions.swift in Sources */,
 				254E4EF02AA305A500CF0DDE /* RequestBuilder+Discover.swift in Sources */,
 				254E4EA72AA305A500CF0DDE /* Endpoints+ReOrderDeck.swift in Sources */,
-				254E4ECC2AA305A500CF0DDE /* FileUploader.swift in Sources */,
 				254E4EB22AA305A500CF0DDE /* Endpoints+Auth.swift in Sources */,
 				254E4ED12AA305A500CF0DDE /* LoginNC.swift in Sources */,
 				254E4EF72AA305A500CF0DDE /* AspectLayoutCV.swift in Sources */,
-				254E4ECA2AA305A500CF0DDE /* ProfileBean.swift in Sources */,
 				6728EC0D2AA2FD3B0094697B /* ViewController.swift in Sources */,
 				254E4EA92AA305A500CF0DDE /* EndPoints+ReorderMoveDecks.swift in Sources */,
-				254E4EC72AA305A500CF0DDE /* TitleBean.swift in Sources */,
 				254E4E8B2AA305A500CF0DDE /* StoryBoardConstants.swift in Sources */,
 				254E4EC22AA305A500CF0DDE /* BaseOperationQueue.swift in Sources */,
 				254E4F012AA305E200CF0DDE /* ApplicationEnvironment.swift in Sources */,
 				254E4EBD2AA305A500CF0DDE /* EndPoints+AddImagesToDeck.swift in Sources */,
 				254E4EF32AA305A500CF0DDE /* RequestBuilder+WheretoStream.swift in Sources */,
 				254E4EA22AA305A500CF0DDE /* CustomNavigationClass.swift in Sources */,
-				254E4ECF2AA305A500CF0DDE /* TitleFiltersNC.swift in Sources */,
 				254E4EA42AA305A500CF0DDE /* EndPoints+CreateNewDeck.swift in Sources */,
-				254E4ECE2AA305A500CF0DDE /* DiscoverNC.swift in Sources */,
 				254E4EB62AA305A500CF0DDE /* Endpoints+Profile.swift in Sources */,
 				254E4E9C2AA305A500CF0DDE /* CGFloat+Extensions.swift in Sources */,
 				254E4EDB2AA305A500CF0DDE /* RequestBuilder+TitleSearch.swift in Sources */,
 				254E4EE92AA305A500CF0DDE /* RequestBuilder+VerifyCode.swift in Sources */,
 				254E4E992AA305A500CF0DDE /* Double+Extensnions.swift in Sources */,
 				254E4E962AA305A500CF0DDE /* SdWeb+Extension.swift in Sources */,
-				254E4ED32AA305A500CF0DDE /* ForgotPasswordNC.swift in Sources */,
 				254E4EED2AA305A500CF0DDE /* RequestBuilder+CreateNewDeck.swift in Sources */,
 				254E4ED42AA305A500CF0DDE /* BaseNetworkController.swift in Sources */,
 				254E4ED92AA305A500CF0DDE /* RequestBuilder+BrowseShot.swift in Sources */,
 				254E4EA02AA305A500CF0DDE /* URL+Extensions.swift in Sources */,
-				254E4ECB2AA305A500CF0DDE /* BrowseBean.swift in Sources */,
 				6728EC092AA2FD3B0094697B /* AppDelegate.swift in Sources */,
 				254E4EF62AA305A500CF0DDE /* KeyChain.swift in Sources */,
 				6728EC0B2AA2FD3B0094697B /* SceneDelegate.swift in Sources */,
@@ -1192,7 +1087,6 @@
 				254E4E742AA305A500CF0DDE /* Auth.swift in Sources */,
 				254E4E7C2AA305A500CF0DDE /* ForgotPasswordModel.swift in Sources */,
 				254E4EDA2AA305A500CF0DDE /* RequestBuilder+ReorderDecks.swift in Sources */,
-				254E4ED82AA305A500CF0DDE /* BrowseNC.swift in Sources */,
 				254E4EF12AA305A500CF0DDE /* RequestBuilder+Decks.swift in Sources */,
 				254E4E982AA305A500CF0DDE /* String+Extensions.swift in Sources */,
 				254E4E882AA305A500CF0DDE /* ColorConstants.swift in Sources */,
@@ -1202,11 +1096,9 @@
 				254E4EB82AA305A500CF0DDE /* EndPoints+GetExistingDeckList.swift in Sources */,
 				254E4EA52AA305A500CF0DDE /* EndPoint+RemoveImageFromDeck.swift in Sources */,
 				254E4EE32AA305A500CF0DDE /* RequestBuilder+Move_ReOrderDeck.swift in Sources */,
-				254E4ED62AA305A500CF0DDE /* DecksNC.swift in Sources */,
 				254E4E8F2AA305A500CF0DDE /* UIView+Extensions.swift in Sources */,
 				254E4EE22AA305A500CF0DDE /* RequestBuilder+ExcludeNudity.swift in Sources */,
 				254E4EBE2AA305A500CF0DDE /* Endpoints+TitleFilters.swift in Sources */,
-				254E4ED22AA305A500CF0DDE /* RegisterNC.swift in Sources */,
 				254E4EEF2AA305A500CF0DDE /* RequestBuilde+ShareDeck.swift in Sources */,
 				254E4EC82AA305A500CF0DDE /* AuthBean.swift in Sources */,
 				254E4EB02AA305A500CF0DDE /* EndPoints+ExportDeck.swift in Sources */,
@@ -1215,7 +1107,6 @@
 				254E4E8C2AA305A500CF0DDE /* GlobalConstants.swift in Sources */,
 				254E4E9A2AA305A500CF0DDE /* Float+Extensions.swift in Sources */,
 				254E4E9F2AA305A500CF0DDE /* URLSessions+Extensions.swift in Sources */,
-				254E4ED52AA305A500CF0DDE /* FiltersNC.swift in Sources */,
 				254E4E8D2AA305A500CF0DDE /* Fonts.swift in Sources */,
 				254E4E8E2AA305A500CF0DDE /* Theme.swift in Sources */,
 				254E4EB52AA305A500CF0DDE /* Endpoints+updateAccountInfo.swift in Sources */,
@@ -1226,7 +1117,6 @@
 				254E4EEB2AA305A500CF0DDE /* RequestBuilder+SearchSuggestions.swift in Sources */,
 				254E4EE82AA305A500CF0DDE /* RequestBuilder+RemoveImageFromDeck.swift in Sources */,
 				254E4EEC2AA305A500CF0DDE /* RequestBuilder+AddCaptionToDeck.swift in Sources */,
-				254E4EC92AA305A500CF0DDE /* DecksBean.swift in Sources */,
 				254E4EDF2AA305A500CF0DDE /* RequestBuilder+RenameDeck.swift in Sources */,
 				254E4EC62AA305A500CF0DDE /* Reachability.swift in Sources */,
 				254E4EDD2AA305A500CF0DDE /* RequestBuilder+AddImagesToDeck.swift in Sources */,
@@ -1241,9 +1131,7 @@
 				254E4E892AA305A500CF0DDE /* NSLauoutConstraints+Extensions.swift in Sources */,
 				254E4E902AA305A500CF0DDE /* Color+Extension.swift in Sources */,
 				254E4EEE2AA305A500CF0DDE /* RequestBuilder+ShotsReorder.swift in Sources */,
-				254E4ECD2AA305A500CF0DDE /* SearchSuggestionNC.swift in Sources */,
 				254E4EEA2AA305A500CF0DDE /* RequestBuilder+TitleDetail.swift in Sources */,
-				254E4ED72AA305A500CF0DDE /* ProfileNC.swift in Sources */,
 				254E4EA82AA305A500CF0DDE /* Endpoints.swift in Sources */,
 				254E4EDC2AA305A500CF0DDE /* RequestBuilder+Auth.swift in Sources */,
 				254E4E9E2AA305A500CF0DDE /* URLRequest+Extensions.swift in Sources */,
@@ -1437,11 +1325,13 @@
 				DEVELOPMENT_TEAM = FLJ657KGWU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Ecommerce/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = AICommerce;
+				INFOPLIST_KEY_CFBundleDisplayName = "Smart Cart";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized ads to you.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
@@ -1474,11 +1364,13 @@
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = FLJ657KGWU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Ecommerce/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = AICommerce;
+				INFOPLIST_KEY_CFBundleDisplayName = "Smart Cart";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "This identifier will be used to deliver personalized ads to you.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.3;

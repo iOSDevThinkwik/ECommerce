@@ -4,21 +4,138 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Black.ttf">
+            <string>Inter-Black</string>
+        </array>
+        <array key="Inter-ExtraBold.ttf">
+            <string>Inter-ExtraBold</string>
+        </array>
+        <array key="Inter-Regular.ttf">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ecommerce" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Ecommerce" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mgk-tT-sfX">
+                                <rect key="frame" x="16" y="394.66666666666669" width="361" height="49"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="480" id="Rjm-nM-q0G"/>
+                                    <constraint firstAttribute="height" constant="49" id="yNg-io-r08"/>
+                                </constraints>
+                                <color key="textColor" name="white_color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Rjm-nM-q0G"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="Rjm-nM-q0G"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xRk-71-ydO">
+                                <rect key="frame" x="16" y="451.66666666666669" width="359" height="49"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="480" id="2Lc-f5-mET"/>
+                                    <constraint firstAttribute="height" constant="49" id="QaQ-Vd-lMb"/>
+                                </constraints>
+                                <color key="textColor" name="white_color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2Lc-f5-mET"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="2Lc-f5-mET"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f24-yf-7gE">
+                                <rect key="frame" x="121.66666666666669" y="524.66666666666663" width="150" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Swk-We-dSA"/>
+                                    <constraint firstAttribute="width" constant="480" id="fXu-Zh-NGF"/>
+                                    <constraint firstAttribute="width" constant="150" id="wju-Wh-mca"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" name="white_color"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fXu-Zh-NGF"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="fXu-Zh-NGF"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="btnSubmitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dE8-km-1O9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Streamline Your Success with Smart Inventory Management" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9c8-uM-wrH">
+                                <rect key="frame" x="16" y="321.66666666666669" width="361" height="39"/>
+                                <fontDescription key="fontDescription" name="Inter-Black" family="Inter" pointSize="16"/>
+                                <color key="textColor" name="white_color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ak-wC-Frh">
+                                <rect key="frame" x="16" y="118" width="361" height="34"/>
+                                <fontDescription key="fontDescription" name="Inter-ExtraBold" family="Inter" pointSize="28"/>
+                                <color key="textColor" name="white_color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="black_color"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Ak-wC-Frh" secondAttribute="trailing" constant="16" id="4kY-Hx-W9n"/>
+                            <constraint firstAttribute="trailing" secondItem="9c8-uM-wrH" secondAttribute="trailing" constant="16" id="7dW-WW-EZP"/>
+                            <constraint firstItem="0Ak-wC-Frh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="8cs-yH-uaC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xRk-71-ydO" secondAttribute="trailing" constant="18" id="9oy-6q-A1G"/>
+                            <constraint firstItem="xRk-71-ydO" firstAttribute="top" secondItem="Mgk-tT-sfX" secondAttribute="bottom" constant="8" id="Jsd-d8-7fn"/>
+                            <constraint firstItem="f24-yf-7gE" firstAttribute="top" secondItem="xRk-71-ydO" secondAttribute="bottom" constant="24" id="NDS-e6-hWQ"/>
+                            <constraint firstItem="xRk-71-ydO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="SyG-FB-o9E"/>
+                            <constraint firstItem="xRk-71-ydO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="XYB-bH-7W9"/>
+                            <constraint firstItem="xRk-71-ydO" firstAttribute="top" secondItem="Mgk-tT-sfX" secondAttribute="bottom" constant="8" id="crb-dU-feh"/>
+                            <constraint firstItem="Mgk-tT-sfX" firstAttribute="top" secondItem="9c8-uM-wrH" secondAttribute="bottom" constant="34" id="jTy-3l-26b"/>
+                            <constraint firstItem="9c8-uM-wrH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mII-7t-URQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mgk-tT-sfX" secondAttribute="trailing" constant="16" id="sir-3J-W2M"/>
+                            <constraint firstItem="f24-yf-7gE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v9C-3a-TWT"/>
+                            <constraint firstItem="0Ak-wC-Frh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="x4S-en-USO"/>
+                            <constraint firstItem="Mgk-tT-sfX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xhx-W5-bQT"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rIa-ox-GIS"/>
+                    <connections>
+                        <outlet property="btnSubmit" destination="f24-yf-7gE" id="kxu-Ky-3uZ"/>
+                        <outlet property="txtEmail" destination="Mgk-tT-sfX" id="MPT-tZ-o3h"/>
+                        <outlet property="txtPassword" destination="xRk-71-ydO" id="qBB-9G-EBl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,4 +160,12 @@
             <point key="canvasLocation" x="14.503816793893129" y="12.67605633802817"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="black_color">
+            <color red="0.039000000804662704" green="0.039000000804662704" blue="0.039000000804662704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white_color">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

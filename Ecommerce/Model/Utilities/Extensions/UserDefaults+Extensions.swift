@@ -13,6 +13,7 @@ enum UserDefaultsKey: String {
     case shouldShowTutorial = "shouldShowTutorial"
     case userInfo = "userInfo"
     case accessToken = "token"
+    case appLanguage = "appLanguage"
     
     
 }
@@ -63,5 +64,45 @@ extension UserDefaults {
         }
         return nil
     }
+    
+    func isUserLoggedIn() -> Bool {
+        if self.accessToken != "" {
+            return true
+        }
+        return false
+    }
+    
+    var accessToken: String {
+        set{
+            self.setValue(newValue, forKey: UserDefaultsKey.accessToken.rawValue)
+            self.synchronize()
+        }
+        get {
+            return (self.value(forKey: UserDefaultsKey.accessToken.rawValue) as? String) ?? ""
+        }
+    }
+    
+    func setAppLanguage(langCode:String){
+        self.setValue(langCode, forKey: UserDefaultsKey.appLanguage.rawValue)
+        UserDefaults.standard.synchronize()
+    }
+    
+    func getAppLanguage() -> String{
+        return self.value(forKey: UserDefaultsKey.appLanguage.rawValue) as? String ?? "en"
+    }
+    
+    
+    
+    func removeAll() {
+        UserDefaults.standard.removeObject(forKey:  "isUserDetail")
+        UserDefaults.standard.removeObject(forKey: UserDefaultsKey.userInfo.rawValue)
+        UserDefaults.standard.removeObject(forKey: UserDefaultsKey.isFirstLaunch.rawValue)
+        UserDefaults.standard.removeObject(forKey: UserDefaultsKey.shouldShowTutorial.rawValue)
+        
+        let domain = Bundle.main.bundleIdentifier!
+        self.removePersistentDomain(forName: domain)
+        self.synchronize()
+    }
+    
     
 }

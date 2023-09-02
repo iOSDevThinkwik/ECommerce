@@ -10,6 +10,8 @@ import UIKit
 
 class ColorConstants {
     
+    static var Secondry_color = UIColor.init(named: "Secondry_color")
+    static var Primary_color = UIColor.init(named: "Primary_color")
     static var WhiteColor = UIColor.init(named: "white_color")!
     static var BlueThemeColor = UIColor.init(named: "blue_theme_color")
     static var DarkGrayColor = UIColor.init(named: "dark_gray")

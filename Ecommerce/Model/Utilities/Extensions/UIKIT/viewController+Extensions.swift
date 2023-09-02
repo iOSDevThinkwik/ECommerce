@@ -169,3 +169,33 @@ extension UIViewController {
     }
     
 }
+extension NSMutableAttributedString {
+    
+    func setColorForText(textForAttribute: String, withColor color: UIColor) {
+        let range: NSRange = self.mutableString.range(of: textForAttribute, options: .caseInsensitive)
+        // Swift 4.2 and above
+        self.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: range)
+        
+        // Swift 4.1 and below
+        self.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: range)
+    }
+    
+    func setFont(textForAttribute: String, withFont font: UIFont) {
+        let range: NSRange = self.mutableString.range(of: textForAttribute, options: .caseInsensitive)
+        // Swift 4.2 and above
+        self.addAttribute(NSAttributedString.Key.font, value: font, range: range)
+        
+        // Swift 4.1 and below
+        self.addAttribute(NSAttributedString.Key.font, value: font, range: range)
+    }
+    
+}
+extension Range where Bound == String.Index {
+    
+    var nsRange:NSRange {
+        return NSRange(location: self.lowerBound.encodedOffset,
+                       length: self.upperBound.encodedOffset -
+                       self.lowerBound.encodedOffset)
+    }
+    
+}

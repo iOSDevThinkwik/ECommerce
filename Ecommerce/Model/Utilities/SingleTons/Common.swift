@@ -63,30 +63,30 @@ class Common: NSObject, URLSessionDelegate, URLSessionDataDelegate {
         DispatchQueue.main.asyncAfter(deadline: when, execute: closure)
     }
     
-    func readLocalized(str : String)->String{
-        var languageType = "en"
-        //    if let requiredLanguage = UserDefaults.standard.value(forKey: LocalStoredData.APP_LANGUAGE.rawValue) as? String{
-        //        languageType = (requiredLanguage.trim().count > 0) ? requiredLanguage : "en"
-        //    }
-        //    let bpath:String = Bundle.main.path(forResource: languageType, ofType: "lproj")! as String
-        //    let bundle = Bundle(path: bpath as String)
-        //    return NSLocalizedString(str, bundle: bundle!, comment: "")
-        
-        if let storedLanguage = UserDefaults.standard.object(forKey: UserDefaultsKey.appLanguage.rawValue) as? String{
-            languageType = storedLanguage
-        }
-        var bpath:String = Bundle.main.path(forResource: languageType, ofType: "lproj")! as String
-        var bundle = Bundle(path: bpath as String)
-        var strFinalString = NSLocalizedString(str, bundle: bundle!, comment: "")
-        
-        //Loading English values if destined values is blank
-        if (strFinalString.trim().isEmpty || strFinalString == str ) && languageType != "en"{
-            bpath = Bundle.main.path(forResource: "en", ofType: "lproj")! as String
-            bundle = Bundle(path: bpath as String)
-            strFinalString = NSLocalizedString(str, bundle: bundle!, comment: "")
-        }
-        return strFinalString
-    }
+//    func readLocalized(str : String)->String{
+//        var languageType = "en"
+//        //    if let requiredLanguage = UserDefaults.standard.value(forKey: LocalStoredData.APP_LANGUAGE.rawValue) as? String{
+//        //        languageType = (requiredLanguage.trim().count > 0) ? requiredLanguage : "en"
+//        //    }
+//        //    let bpath:String = Bundle.main.path(forResource: languageType, ofType: "lproj")! as String
+//        //    let bundle = Bundle(path: bpath as String)
+//        //    return NSLocalizedString(str, bundle: bundle!, comment: "")
+//
+//        if let storedLanguage = UserDefaults.standard.object(forKey: UserDefaultsKey.appLanguage.rawValue) as? String{
+//            languageType = storedLanguage
+//        }
+//        var bpath:String = Bundle.main.path(forResource: languageType, ofType: "lproj")! as String
+//        var bundle = Bundle(path: bpath as String)
+//        var strFinalString = NSLocalizedString(str, bundle: bundle!, comment: "")
+//
+//        //Loading English values if destined values is blank
+//        if (strFinalString.trim().isEmpty || strFinalString == str ) && languageType != "en"{
+//            bpath = Bundle.main.path(forResource: "en", ofType: "lproj")! as String
+//            bundle = Bundle(path: bpath as String)
+//            strFinalString = NSLocalizedString(str, bundle: bundle!, comment: "")
+//        }
+//        return strFinalString
+//    }
     
     
     
@@ -109,25 +109,25 @@ class Common: NSObject, URLSessionDelegate, URLSessionDataDelegate {
         UserDefaults.standard.removeAll()
         self.delay(0.3) {
             DispatchQueue.main.async { [self] in
-                let vc: FreeTrialVC = StoryBoardConstants.TABBAR.instantiateViewController(aClass: FreeTrialVC.self)
-                let navVC = UINavigationController.init(rootViewController: vc)
-                APPDELEGATE.window?.rootViewController = navVC
-                APPDELEGATE.window?.makeKeyAndVisible()
+//                let vc: FreeTrialVC = StoryBoardConstants.TABBAR.instantiateViewController(aClass: FreeTrialVC.self)
+//                let navVC = UINavigationController.init(rootViewController: vc)
+//                APPDELEGATE.window?.rootViewController = navVC
+//                APPDELEGATE.window?.makeKeyAndVisible()
             }
         }
     }
     
     func trialEndsView(){
         DispatchQueue.main.async { [self] in
-            let vc: TrialEndsVC = StoryBoardConstants.TABBAR.instantiateViewController(aClass: TrialEndsVC.self)
-            let navVC = UINavigationController.init(rootViewController: vc)
-            APPDELEGATE.window?.rootViewController = navVC
-            APPDELEGATE.window?.makeKeyAndVisible()
+//            let vc: TrialEndsVC = StoryBoardConstants.TABBAR.instantiateViewController(aClass: TrialEndsVC.self)
+//            let navVC = UINavigationController.init(rootViewController: vc)
+//            APPDELEGATE.window?.rootViewController = navVC
+//            APPDELEGATE.window?.makeKeyAndVisible()
         }
     }
     
     func cleanUp() {
-        UserDefaults.standard.removeChacheImages()
+//        UserDefaults.standard.removeChacheImages()
     }
     
     func buttonWithImageTint(btn:UIButton,image: UIImage,Uicolor:UIColor){
